@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import './components/Navbar/Navbar.css';
@@ -81,12 +80,12 @@ function App() {
 
   return (
     <div className="App">
-      
+
       <header className="App-header">
-        <Navbar/>
+        <Navbar />
       </header>
       <main className='App-main'>
-        {<img src={logo} className="App-logo" alt="logo" width="10%" />}
+
       </main>
       <footer>
 

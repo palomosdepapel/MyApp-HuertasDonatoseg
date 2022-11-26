@@ -1,3 +1,5 @@
+import logo from '../Navbar/logo.svg' 
+
 import React from 'react'
 
 const Navbar = () => {
@@ -5,9 +7,9 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-xl bg-light fixed-top px-2">
       <div className="container-fluid">
         <a className="navbar-brand d-none d-xl-block" href="index.html"
-        >Joyas.com</a>
+        ><img src={logo} className="App-logo" alt="logo"/></a>
         <a className="navbar-brand d-xl-none d-xl-block" href="index.html"
-        >Joyas.com</a>
+        ><img src={logo} className="App-logo" alt="logo"/></a>
         <form className="flex-fill d-xl-none d-xl-block flexi" role="search">
           <input
             className="form-control"
