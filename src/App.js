@@ -87,9 +87,6 @@ function App() {
       <main className='App-main'>
 
       </main>
-      <footer>
-
-      </footer>
     </div>
   );
 }

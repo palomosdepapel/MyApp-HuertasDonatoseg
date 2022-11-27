@@ -1,15 +1,17 @@
-import logo from '../Navbar/logo.svg' 
+import logo from '../Navbar/logo.svg'
 
 import React from 'react'
+import Cartwidget from './CartWidget/Cartwidget'
+import './CartWidget/Cartwidget.css';
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-xl bg-light fixed-top px-2">
       <div className="container-fluid">
         <a className="navbar-brand d-none d-xl-block" href="index.html"
-        ><img src={logo} className="App-logo" alt="logo"/></a>
-        <a className="navbar-brand d-xl-none d-xl-block" href="index.html"
-        ><img src={logo} className="App-logo" alt="logo"/></a>
+        ><img src={logo} className="App-logo" alt="Sue Jewellery" title="Sue Jewellery" /></a>
+        <a className="navbar-brand d-xl-none d-xl-block" title="Sue Jewellery" href="index.html"
+        ><img src={logo} className="App-logo" alt="Sue Jewellery" /></a>
         <form className="flex-fill d-xl-none d-xl-block flexi" role="search">
           <input
             className="form-control"
@@ -29,8 +31,9 @@ const Navbar = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <a href="index.html" className="btn btn-light btn-lg" title="Cart"
-          ><i className="bi bi-cart"></i></a>
+        <a href="index.html" className="btn btn-light btn-lg position-relative" title="Cart">
+          <i className="bi bi-cart"></i><Cartwidget/>
+        </a>
         <div
           className="collapse navbar-collapse px-2"
           id="navbarSupportedContent"
@@ -44,7 +47,7 @@ const Navbar = () => {
             />
           </form>
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-          <li className="nav-item dropdown">
+            <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Matrimonio
               </a>
@@ -54,7 +57,7 @@ const Navbar = () => {
                 <li><a className="dropdown-item" href="index.html">- Anillo con Declaración</a></li>
                 <li><a className="dropdown-item" href="index.html">- Argolla Pisaargolla</a></li>
                 <li><a className="dropdown-item" href="index.html">- Anillos con piedra Certificada</a></li>
-                <li><hr className="dropdown-divider"/></li>
+                <li><hr className="dropdown-divider" /></li>
                 <li><a className="dropdown-item" href="index.html">Argollas</a></li>
               </ul>
             </li>
@@ -121,7 +124,7 @@ const Navbar = () => {
           ></a>
           <a href="index.html" className="btn btn-light btn-lg" title="Ingrese o regístrese"
           ><i className="bi bi-person-fill"></i></a>
-          
+
         </div>
       </div>
     </nav>
