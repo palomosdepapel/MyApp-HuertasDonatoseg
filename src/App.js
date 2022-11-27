@@ -1,6 +1,9 @@
 import './App.css';
+
 import Navbar from './components/Navbar/Navbar';
 import './components/Navbar/Navbar.css';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import './components/ItemListContainer/ItemListContainer.css';
 function App() {
 
   //let edad = 18
@@ -84,8 +87,15 @@ function App() {
       <header className="App-header">
         <Navbar />
       </header>
-      <main className='App-main'>
-
+      <main className='App-main mt-5 pt-5'>
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <ItemListContainer/>
+            </div>
+          </div>
+        </div>
+       
       </main>
     </div>
   );
