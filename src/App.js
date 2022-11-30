@@ -88,10 +88,12 @@ function App() {
         <Navbar />
       </header>
       <main className='App-main mt-5 pt-5'>
-        <div className="container">
+        <div className="container pt-3">
           <div className="row">
             <div className="col-12">
-              <ItemListContainer/>
+              <ItemListContainer
+                mensaje="Hola Coders"
+              />
             </div>
           </div>
         </div>
