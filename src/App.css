@@ -136,6 +136,80 @@ a:hover {
   width: min-content;
 }
 
+/* Backgrounds */
+
+.bg-primary{ background-color: var(--primary-color)!important;}
+.bg-secondary{ background-color: var(--secondary-color)!important;}
+.bg-tertiary{ background-color: var(--tertiary-color)!important;}
+
+/* Botones */
+.btn {
+  font-style: normal;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 15px;
+  padding: 0.75rem 0.75rem 0.75rem 0.75rem;
+  border-radius: 5rem;
+  position: relative;
+  margin: 0 1px;
+}
+
+.btn-light{
+  color: var(--primary-color);
+}
+.btn-light:hover{
+  color: var(--white-color);
+}
+.btn-link{
+  padding: 4px;
+  color: var(--grey-color);
+  background-color: var(--greylight-color);
+}
+.btn-link:hover{
+  color: var(--white-color)!important;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+.btn-primary{
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active{
+  color: var(--primary-color);
+  background-color: var(--white-color);
+  border-color: var(--primary-color);
+}
+
+.btn-outline-primary{
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-outline-primary:hover{
+  border-color: var(--primary-color);
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active{
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.btn-lg{
+  font-size: 150%;
+}
+
+.btn-sm{
+  font-size: 80%;
+  display: initial;
+  padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+}
+
 .form-control{
   border-radius: 5rem;
 }

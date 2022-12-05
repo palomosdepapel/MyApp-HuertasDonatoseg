@@ -46,7 +46,7 @@ const Navbar = () => {
               aria-label="Buscar..."
             />
           </form>
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0 px-3">
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Matrimonio
@@ -61,9 +61,6 @@ const Navbar = () => {
                 <li><a className="dropdown-item" href="index.html">Argollas</a></li>
               </ul>
             </li>
-            <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="index.html">Aretes</a>
-            </li>
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Aretes
@@ -75,14 +72,17 @@ const Navbar = () => {
               </ul>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="index.html">Anillos</a>
+              <a className="nav-link" href="index.html">Dijes</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link active" href="index.html">Anillos</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="index.html">Cadenas</a>
             </li>
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Pulseras
+                Pulseras y cadenas
               </a>
               <ul className="dropdown-menu">
                 <li><a className="dropdown-item" href="index.html">Aros</a></li>
