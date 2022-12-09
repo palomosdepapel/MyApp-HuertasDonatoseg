@@ -15,7 +15,7 @@ const Footer = () => {
                                 <li><a href="index.html">Matrimonio</a></li>
                                 <li><a href="index.html">Aretes</a></li>
                                 <li><a href="index.html">Dijes</a></li>
-                                <li><a className='active' href="index.html">Anillos</a></li>
+                                <li><a href="index.html">Anillos</a></li>
                                 <li><a href="index.html">Cadenas</a></li>
                             </ul>
                         </div>
@@ -24,7 +24,7 @@ const Footer = () => {
                             <ul>
                                 <li><a href="index.html">Pulseras</a></li>
                                 <li><a href="index.html">Collares</a></li>
-                                <li><a href="index.html">Relojes</a></li>
+                                <li><a className='active' href="index.html">Relojes</a></li>
                                 <li><a href="index.html">Huevos de Fabergé</a></li>
                             </ul>
                         </div>

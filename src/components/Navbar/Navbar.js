@@ -31,7 +31,7 @@ const Navbar = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <a href="index.html" className="btn btn-light btn-lg position-relative" title="Cart">
+        <a href="index.html" className="btn btn-light btn-lg position-relative" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" title="Cart">
           <i className="bi bi-cart"></i><Cartwidget/>
         </a>
         <div
@@ -75,7 +75,7 @@ const Navbar = () => {
               <a className="nav-link" href="index.html">Dijes</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link active" href="index.html">Anillos</a>
+              <a className="nav-link" href="index.html">Anillos</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="index.html">Cadenas</a>
@@ -103,7 +103,7 @@ const Navbar = () => {
               </ul>
             </li>
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a className="nav-link dropdown-toggle active" href="index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Relojes
               </a>
               <ul className="dropdown-menu">

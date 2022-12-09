@@ -2,10 +2,12 @@ import "./App.css";
 
 import Navbar from "./components/Navbar/Navbar";
 import "./components/Navbar/Navbar.css";
-import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+// import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import "./components/ItemListContainer/ItemListContainer.css";
 import Footer from "./components/Footer/Footer";
 import "./components/Footer/Footer.css";
+import Card from "./components/Card/Card";
+import Cart from "./components/Cart/Cart";
 
 function App() {
   //let edad = 18
@@ -81,76 +83,115 @@ function App() {
   //  backgroundColor:'blue'
   //}
 
+  const cards = [
+    {
+      title: "Reloj Guess Análogo",
+      description:
+        "Reloj guess análogo, para hombre, tablero redondo colores azul y rosa, estilo index + arabigo, pulso silicona color azul, calendario , Diámetro: 44.00mm , Resistencia al agua: 10 bares",
+      img: "https://kevins.com.co/img/productos/6R06810172.jpg",
+      price: 1076000,
+      discount: 1950000,
+      category: "Reloj, hombre", 
+    },
+    {
+      title: "Reloj Edox Análogo",
+      description:
+        "Reloj Edox analogo, para dama, tablero redondo colores blanco y rosa, estilo index + arabigo, pulso silicona color blanco, calendario, cronografo , Diámetro: 38.00mm , Resistencia al agua: 30 bares",
+      img: "https://kevins.com.co/img/productos/2R06000141.jpg",
+      price: 4509000,
+      discount: 4800000,
+      category: "Reloj, mujer", 
+    },
+  ];
+
   return (
     <div className="App">
+      
       <header className="App-header">
         <Navbar />
       </header>
+      
       <main className="App-main mt-5 pt-5">
-        <div className="container pt-3">
-          <div className="row">
-            <div className="col-12">
-              <ItemListContainer mensaje="Hola Coders" />
+
+        <Cart/>
+        
+        {/* <section>
+          <div className="container pt-3">
+            <div className="row">
+              <div className="col-12">
+                <ItemListContainer mensaje="Hola Coders" />
+              </div>
             </div>
+          </div>
+        </section> */}
+
+        <div className="container d-md-flex align-items-stretch">
+          <nav id="sidebar" className="me-3">
+            <div className="mb-3">
+              <p className="py-3"><strong>12 productos encontrados</strong></p>
+            </div>
+            <div className="mb-3">
+              <p>Ordenar por:</p>
+              <select className="form-select form-select-sm" aria-label="Default select example">
+                <option value="1">Cualquier precio</option>
+                <option value="2">Menor precio</option>
+                <option value="3">Mayor precio</option>
+              </select>
+            </div>
+            <div className="mb-3">
+              <h5 className="py-3">Marca</h5>
+              <div className="tagcloud">
+                <a href="index.html" className="tag-cloud-link">Citizen</a>
+                <a href="index.html" className="tag-cloud-link">Claude Bernal</a>
+                <a href="index.html" className="tag-cloud-link">Diesel</a>
+              </div>
+            </div>
+            <div className="mb-3">
+              <h5 className="py-3">Género</h5>
+              <div className="tagcloud">
+                <a href="index.html" className="tag-cloud-link">Hombre</a>
+                <a href="index.html" className="tag-cloud-link">Mujer</a>
+                <a href="index.html" className="tag-cloud-link">Niño</a>
+              </div>
+            </div>
+            <div className="mb-3">
+              <h5 className="py-3">Funcionalidad</h5>
+              <div className="tagcloud">
+                <a href="index.html" className="tag-cloud-link">Análogo</a>
+                <a href="index.html" className="tag-cloud-link">Digital</a>
+                <a href="index.html" className="tag-cloud-link">Análogo y digital</a>
+              </div>
+            </div>
+            <div className="mb-3">
+              <h5 className="py-3">Material</h5>
+              <div className="tagcloud">
+                <a href="index.html" className="tag-cloud-link">Acero</a>
+                <a href="index.html" className="tag-cloud-link">Cuero</a>
+                <a href="index.html" className="tag-cloud-link">Cuero sintético</a>
+              </div>
+            </div>
+          </nav>
+          <div id="content" className="p-4 p-md-5 pt-5">
+            <section>
+              <div className="container">
+                <div className="row">
+                  
+                    {cards.map(({ title, description, img, price, discount }, index) => (
+                      <Card
+                        key={index}
+                        title={title}
+                        description={description}
+                        price={price}
+                        discount={discount}
+                        img={img}
+                      />
+                    ))}
+                  
+                </div>
+              </div>
+            </section>
           </div>
         </div>
-        <section className="py-5">
-          <div className="container-lg">
-            <div className="row justify-content-center">
-              <div className="col-4 shadow-sm p-3 mb-5 bg-body rounded">
-                <h1 className="py-3 text-center">Ingrese</h1>
-                <form>
-                  <div className="mb-3">
-                    <label for="exampleInputEmail1" className="form-label">Email</label>
-                    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
-                      <div id="emailHelp" className="form-text">Ingrese el email que suministró al momento de regiatrarse</div>
-                  </div>
-                  <div className="mb-3">
-                    <label for="exampleInputPassword1" className="form-label">Contraseña</label>
-                    <input type="password" className="form-control" id="exampleInputPassword1"/>
-                  </div>
-                  <div className="mb-3 form-check">
-                    <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
-                      <label className="form-check-label" for="exampleCheck1">Recordar</label>
-                      <a className="float-end" href="index.html">¿Olvidó su contraseña?</a>
-                  </div>
-                  <button type="submit" className="btn btn-primary">Ingresar</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className="py-5">
-          <div className="container-lg">
-            <div className="row justify-content-center">
-              <div className="col-4 shadow-sm p-3 mb-5 bg-body rounded">
-                <h1 className="py-3 text-center">Regístrese</h1>
-                <form>
-                <div className="mb-3">
-                    <label for="exampleInputName2" className="form-label">Nombre</label>
-                    <input type="text" className="form-control" id="exampleInputName2"/>
-                  </div>
-                  <div className="mb-3">
-                    <label for="exampleInputLastName2" className="form-label">Apellido</label>
-                    <input type="text" className="form-control" id="exampleInputLastName2"/>
-                  </div>
-                  <div className="mb-3">
-                    <label for="exampleInputEmail2" className="form-label">Email</label>
-                    <input type="email" className="form-control" id="exampleInputEmail2"/>
-                  </div>
-                  <div className="mb-3">
-                    <label for="exampleInputPassword2" className="form-label">Contraseña</label>
-                    <input type="password" className="form-control" id="exampleInputPassword2"/>
-                  </div>
-                  <div className="mb-3 form-check">
-                    <a className="float-start" href="index.html">Ya tengo una cuenta</a>
-                  </div>
-                  <button type="submit" className="btn btn-primary">Crear cuenta</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </section>
       </main>
       <footer>
         <Footer />
