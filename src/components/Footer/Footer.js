@@ -62,7 +62,7 @@ const Footer = () => {
                         ></a>
                     </div>
                     <div className="py-3">
-                        <img src="./img/lr.png" alt=""/>
+                        <img src="./img/lr.png" alt="lr"/>
                     </div>
                 </div>
                 <div className="col-md-8">

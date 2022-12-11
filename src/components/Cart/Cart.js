@@ -25,7 +25,7 @@ const Cart = () => {
                     <div>
                         <div className="row">
                             <div className="col-3 d-flex align-items-center p-2 border-bottom">
-                                <img src="https://kevins.com.co/img/productos/6R06810172.jpg" alt=""/>
+                                <img src="https://kevins.com.co/img/productos/6R06810172.jpg" alt="Product"/>
                             </div>
 
                             <div className="col-3 d-flex align-items-center p-2 border-bottom">

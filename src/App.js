@@ -2,89 +2,21 @@ import "./App.css";
 
 import Navbar from "./components/Navbar/Navbar";
 import "./components/Navbar/Navbar.css";
-// import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+//import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import "./components/ItemListContainer/ItemListContainer.css";
 import Footer from "./components/Footer/Footer";
 import "./components/Footer/Footer.css";
 import Card from "./components/Card/Card";
 import Cart from "./components/Cart/Cart";
+import Pagination from "./components/Pagination/Pagination";
+import Sidebar from "./components/Sidebar/Sidebar";
+import Product from "./components/Product/Product";
 
 function App() {
-  //let edad = 18
-
-  // if(edad > 18) {
-  //   console.log('eres mayor de edad')
-  // }else if (edad === 18){
-  //   console.log('justo tenes 18')
-  // }else {
-  //   console.log('eres menor de edad')
-  // }
-
-  // edad > 18 ? console.log('eres mayor') : edad === 18 ? console.log('justo tenes 18') : console.log('sos menor')
-
-  // let edadPersona = 20
-
-  //let edadFinal =  edadPersona !== null ? edadPersona : 17
-  // let edadFinal =  edadPersona || 17
-
-  // // true || false => true
-  // // true || true  => true
-  // // false || true => true
-  // // false || false => false
-  //console.log(edadFinal)
-
-  // let text = ""
-  // let nombre = ""
-
-  // let finalText = ` Esto es lo que se va a imprimir ${texto} de lo cual el auto es ${nombre}`
-  // let finalText = " Esto es lo que se va a imprimir " + texto + " de lo cual el auto es " + nombre
-
-  // let manzanas = 10
-  // let manzanasAgregadas = 5
-
-  // // let finalText = "Jorege tenia " + manzanas + " pero Luis le agrego " + manzanasAgregadas + "y ahora tiene un total de" + manzanas + manzanasAgregadas
-
-  // let finalText = ` Jorge tenia ${manzanas} manzanas y luis le agrego ${manzanasAgregadas} manzanas y ahora tiene ${(manzanas + manzanasAgregadas)}`
-  // console.log(finalText)
-
-  // //console.log( text + "juampi") => hola coder soy juampi
-
-  // let jugadorDeFutbol = {
-
-  //   name:"Lionel",
-  //   apellido:"Messi",
-  //   soltero : false ,
-  //   hijos : ["Thiago","Mateo","Ciro"]
-  // }
-
-  // const {soltero,hijos:[,,c],name,apellido} = jugadorDeFutbol
-
-  // console.log(c)
-
-  // const arr = [1,2,3,4]
-
-  // const resultado = arr.includes(-1)
-
-  // console.log(resultado)
-
-  // forEeach  =>  recorre
-  // map   =>  podes modificar cosas y retorna una nueva array
-  // find  => te devuelve el tipo de dato que encuentra y si no un objeto vacio
-  // filter  => reduce un array  y filtra , la respuesta esta en un arr  en el caso contrario []
-  // indexOf => 1 -1
-  // every  => booleano
-  // some  => booleano
-  // reduce  =>
-
-  //let nombre = "Hovhannes"
-
-  //let styles = {
-  //  color:'white',
-  //  backgroundColor:'blue'
-  //}
 
   const cards = [
     {
+      id: 1,
       title: "Reloj Guess Análogo",
       description:
         "Reloj guess análogo, para hombre, tablero redondo colores azul y rosa, estilo index + arabigo, pulso silicona color azul, calendario , Diámetro: 44.00mm , Resistencia al agua: 10 bares",
@@ -94,6 +26,7 @@ function App() {
       category: "Reloj, hombre", 
     },
     {
+      id: 2,
       title: "Reloj Edox Análogo",
       description:
         "Reloj Edox analogo, para dama, tablero redondo colores blanco y rosa, estilo index + arabigo, pulso silicona color blanco, calendario, cronografo , Diámetro: 38.00mm , Resistencia al agua: 30 bares",
@@ -101,6 +34,46 @@ function App() {
       price: 4509000,
       discount: 4800000,
       category: "Reloj, mujer", 
+    },
+    {
+      id: 3,
+      title: "Reloj Diesel On",
+      description:
+        "Reloj diesel analogo y digital, para hombre, tablero redondo color negro, estilo sin numeros, pulso lona color azul , Diámetro: 48.00mm , Resistencia al agua: 5 bares",
+      img: "https://kevins.com.co/img/productos/7606000992.jpg",
+      price: 690000,
+      discount: 621000,
+      category: "Reloj, inteligente", 
+    },
+    {
+      id: 4,
+      title: "Reloj Diesel Análogo",
+      description:
+        "Reloj diesel análogo, para hombre, tablero redondo color negro, estilo index, pulso silicona colores naranja y negro, calendario, cronografo , Diámetro: 48.00mm , Resistencia al agua: 5 bares",
+      img: "https://kevins.com.co/img/productos/698615140411.jpg",
+      price: 1438000,
+      discount: 1438000,
+      category: "Reloj, deportivos", 
+    },
+    {
+      id: 5,
+      title: "Reloj Jeans Análogo",
+      description:
+        "Reloj jeans análogo, para dama, tablero redondo colores rosado y plateado, estilo puntos + arabigo, pulso acero color plateado , Diámetro: 22.70mm , Resistencia al agua: 1 bar",
+      img: "https://kevins.com.co/img/productos/7206001111.jpg",
+      price: 150000,
+      discount: 120000,
+      category: "Reloj, fashion", 
+    },
+    {
+      id: 6,
+      title: "Reloj Claude Bernard Análogo",
+      description:
+        "Reloj claude bernard analogo, para hombre, tablero redondo colores blanco y negro, estilo romanos, pulso cuero color negro, calendario , Diámetro: 39.00mm , Resistencia al agua: 3 bares",
+      img: "https://kevins.com.co/img/productos/R206000312.jpg",
+      price: 753000,
+      discount: 454000,
+      category: "Reloj, fashion", 
     },
   ];
 
@@ -110,11 +83,13 @@ function App() {
       <header className="App-header">
         <Navbar />
       </header>
-      
+      <Cart/>
       <main className="App-main mt-5 pt-5">
-
-        <Cart/>
         
+        <div className="container">
+            <Product/>    
+        </div>
+
         {/* <section>
           <div className="container pt-3">
             <div className="row">
@@ -126,52 +101,10 @@ function App() {
         </section> */}
 
         <div className="container d-md-flex align-items-stretch">
-          <nav id="sidebar" className="me-3">
-            <div className="mb-3">
-              <p className="py-3"><strong>12 productos encontrados</strong></p>
-            </div>
-            <div className="mb-3">
-              <p>Ordenar por:</p>
-              <select className="form-select form-select-sm" aria-label="Default select example">
-                <option value="1">Cualquier precio</option>
-                <option value="2">Menor precio</option>
-                <option value="3">Mayor precio</option>
-              </select>
-            </div>
-            <div className="mb-3">
-              <h5 className="py-3">Marca</h5>
-              <div className="tagcloud">
-                <a href="index.html" className="tag-cloud-link">Citizen</a>
-                <a href="index.html" className="tag-cloud-link">Claude Bernal</a>
-                <a href="index.html" className="tag-cloud-link">Diesel</a>
-              </div>
-            </div>
-            <div className="mb-3">
-              <h5 className="py-3">Género</h5>
-              <div className="tagcloud">
-                <a href="index.html" className="tag-cloud-link">Hombre</a>
-                <a href="index.html" className="tag-cloud-link">Mujer</a>
-                <a href="index.html" className="tag-cloud-link">Niño</a>
-              </div>
-            </div>
-            <div className="mb-3">
-              <h5 className="py-3">Funcionalidad</h5>
-              <div className="tagcloud">
-                <a href="index.html" className="tag-cloud-link">Análogo</a>
-                <a href="index.html" className="tag-cloud-link">Digital</a>
-                <a href="index.html" className="tag-cloud-link">Análogo y digital</a>
-              </div>
-            </div>
-            <div className="mb-3">
-              <h5 className="py-3">Material</h5>
-              <div className="tagcloud">
-                <a href="index.html" className="tag-cloud-link">Acero</a>
-                <a href="index.html" className="tag-cloud-link">Cuero</a>
-                <a href="index.html" className="tag-cloud-link">Cuero sintético</a>
-              </div>
-            </div>
-          </nav>
-          <div id="content" className="p-4 p-md-5 pt-5">
+
+          <Sidebar/>
+
+          <div id="content" className="p-2 p-md-2 pt-5">
             <section>
               <div className="container">
                 <div className="row">
@@ -187,6 +120,11 @@ function App() {
                       />
                     ))}
                   
+                </div>
+              </div>
+              <div className="container pt-5">
+                <div className="row">
+                  <Pagination/>
                 </div>
               </div>
             </section>
