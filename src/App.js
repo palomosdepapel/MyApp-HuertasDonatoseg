@@ -11,6 +11,7 @@ import Cart from "./components/Cart/Cart";
 import Pagination from "./components/Pagination/Pagination";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Product from "./components/Product/Product";
+import Breadcrumb from "./components/Breadcrumb/Breadcrumb";
 
 function App() {
 
@@ -85,10 +86,15 @@ function App() {
       </header>
       <Cart/>
       <main className="App-main mt-5 pt-5">
-        
+
         <div className="container">
             <Product/>    
         </div>
+
+        <div className="container">
+          <Breadcrumb/>
+        </div>
+        
 
         {/* <section>
           <div className="container pt-3">

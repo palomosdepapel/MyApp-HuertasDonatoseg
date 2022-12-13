@@ -198,7 +198,7 @@ a:hover {
   color: var(--white-color);
 }
 .btn-link{
-  padding: 4px;
+  padding: 10px;
   color: var(--grey-color);
   background-color: var(--greylight-color);
 }
