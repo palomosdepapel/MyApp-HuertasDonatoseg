@@ -13,7 +13,7 @@ const ItemListContainer = () => {
       title: "Reloj Guess Análogo",
       description:
         "Reloj guess análogo, para hombre, tablero redondo colores azul y rosa, estilo index + arabigo, pulso silicona color azul, calendario , Diámetro: 44.00mm , Resistencia al agua: 10 bares",
-      img: "https://kevins.com.co/img/productos/6R06810172.jpg",
+      img: "/products/relojes/hombres/6R06810172.jpg",
       price: 1076000,
       discount: 1950000,
       category: "Reloj, hombre", 
@@ -23,7 +23,7 @@ const ItemListContainer = () => {
       title: "Reloj Edox Análogo",
       description:
         "Reloj Edox analogo, para dama, tablero redondo colores blanco y rosa, estilo index + arabigo, pulso silicona color blanco, calendario, cronografo , Diámetro: 38.00mm , Resistencia al agua: 30 bares",
-      img: "https://kevins.com.co/img/productos/2R06000141.jpg",
+      img: "/products/relojes/mujeres/2R06000141.jpg",
       price: 4509000,
       discount: 4800000,
       category: "Reloj, mujer", 
@@ -33,7 +33,7 @@ const ItemListContainer = () => {
       title: "Reloj Diesel On",
       description:
         "Reloj diesel analogo y digital, para hombre, tablero redondo color negro, estilo sin numeros, pulso lona color azul , Diámetro: 48.00mm , Resistencia al agua: 5 bares",
-      img: "https://kevins.com.co/img/productos/7606000992.jpg",
+      img: "/products/relojes/inteligentes/7606000992.jpg",
       price: 690000,
       discount: 621000,
       category: "Reloj, inteligente", 
@@ -43,7 +43,7 @@ const ItemListContainer = () => {
       title: "Reloj Diesel Análogo",
       description:
         "Reloj diesel análogo, para hombre, tablero redondo color negro, estilo index, pulso silicona colores naranja y negro, calendario, cronografo , Diámetro: 48.00mm , Resistencia al agua: 5 bares",
-      img: "https://kevins.com.co/img/productos/698615140411.jpg",
+      img: "/products/relojes/deportivos/698615140411.jpg",
       price: 1438000,
       discount: 1438000,
       category: "Reloj, deportivos", 
@@ -53,7 +53,7 @@ const ItemListContainer = () => {
       title: "Reloj Jeans Análogo",
       description:
         "Reloj jeans análogo, para dama, tablero redondo colores rosado y plateado, estilo puntos + arabigo, pulso acero color plateado , Diámetro: 22.70mm , Resistencia al agua: 1 bar",
-      img: "https://kevins.com.co/img/productos/7206001111.jpg",
+      img: "/products/relojes/fashion/7206001111.jpg",
       price: 150000,
       discount: 120000,
       category: "Reloj, fashion", 
@@ -63,7 +63,7 @@ const ItemListContainer = () => {
       title: "Reloj Claude Bernard Análogo",
       description:
         "Reloj claude bernard analogo, para hombre, tablero redondo colores blanco y negro, estilo romanos, pulso cuero color negro, calendario , Diámetro: 39.00mm , Resistencia al agua: 3 bares",
-      img: "https://kevins.com.co/img/productos/R206000312.jpg",
+      img: "/products/relojes/clasicos/R206000312.jpg",
       price: 753000,
       discount: 454000,
       category: "Reloj, fashion", 
