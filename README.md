@@ -73,3 +73,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 4 DIC 2022
 En este proyecto usaremos React JS para crear el carrito de compras de una joyería
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+14 DIC 2022
+Se han creado: los componentes (login, register, cart, creadcrumb, footer), router, navLinks, se han cambiado als urls de producto de remoto a local, se ha ajustado de acierdo a la retrolimentación de la primera entrega
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
