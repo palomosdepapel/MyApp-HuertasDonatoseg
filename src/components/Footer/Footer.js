@@ -1,6 +1,5 @@
 import './Footer.css';
 import logofooter from '../Footer/logofooter.svg'
-
 import React from 'react'
 
 const Footer = () => {
@@ -67,8 +66,10 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="col-md-8">
-                    <div className="row">
-                        <div className="col-sm-3 text-center text-md-start"> <a href="/"><img src={logofooter} className="App-logo" alt="Logo"/></a> </div>
+                    <div className="row align-items-center">
+                        <div className="col-sm-3 text-center text-md-start">
+                            <a href="/"><img src={logofooter} className="App-logo" alt="Logo"/></a>
+                        </div>
                         <div className="col-sm-9 text-center text-md-start">
                             <small>© 2023, Sue Joyeros. Bogotá Colombia</small> 
                         </div>

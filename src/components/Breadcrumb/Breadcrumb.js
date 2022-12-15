@@ -1,12 +1,15 @@
 import "./Breadcrumb.css";
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 
 const Breadcrumb = () => {
     return (
         <div>
             <nav aria-label="breadcrumb">
                 <ol className="breadcrumb">
-                    <li className="breadcrumb-item"><a href="/">Inicio</a></li>
+                    <li className="breadcrumb-item">
+                        <NavLink to="/">Inicio</NavLink>
+                    </li>
                     <li className="breadcrumb-item"><a href="/category/:id">Relojes</a></li>
                     <li className="breadcrumb-item active" aria-current="page">Hombres</li>
                 </ol>

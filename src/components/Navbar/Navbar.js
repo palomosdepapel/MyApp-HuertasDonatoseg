@@ -3,16 +3,17 @@ import './Navbar.css';
 import React from 'react'
 import Cartwidget from './CartWidget/Cartwidget'
 import './CartWidget/Cartwidget.css';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <header>
       <nav className="navbar navbar-expand-xxl bg-light fixed-top px-2">
         <div className="container-fluid">
-          <a className="navbar-brand d-none d-xxl-block" href="/"
-          ><img src={logo} className="App-logo" alt="Sue Jewellery" title="Sue Jewellery" /></a>
-          <a className="navbar-brand d-xxl-none d-xxl-block" title="Sue Jewellery" href="/"
-          ><img src={logo} className="App-logo" alt="Sue Jewellery" /></a>
+
+          <NavLink className={'navbar-brand d-none d-xxl-block'} to="/"><img src={logo} className="App-logo" alt="Sue Jewellery" title="Sue Jewellery" /></NavLink>
+          <NavLink className={'navbar-brand d-xxl-none d-xxl-block'} to="/"><img src={logo} className="App-logo" alt="Sue Jewellery" title="Sue Jewellery" /></NavLink>
+          
           <form className="flex-fill d-xxl-none d-xxl-block flexi" role="search">
             <input
               className="form-control"
@@ -32,7 +33,7 @@ const Navbar = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <a href="index.html" className="btn btn-light btn-lg position-relative" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" title="Cart">
+          <a href="#OpenCart" className="btn btn-light btn-lg position-relative" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" title="Cart">
             <i className="bi bi-cart"></i><Cartwidget />
           </a>
           <div

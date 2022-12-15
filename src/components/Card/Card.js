@@ -7,9 +7,9 @@ const Card = (props) => {
   return (
     <div className='col-sm-6 col-md-6 col-lg-4'>
       <div className="card pb-4">
-        <a href="index.html" className="position-absolute top-0 end-0 btn btn-link"><i className="bi bi-heart"></i></a>
-        <a href="index.html"><img src={img} className="card-img-top" alt="..."/></a>
-        <a href="index.html" className="card-body">
+        <a href="/item/detail/1" className="position-absolute top-0 end-0 btn btn-link"><i className="bi bi-heart"></i></a>
+        <a href="/item/detail/1"><img src={img} className="card-img-top" alt="..."/></a>
+        <a href="/item/detail/1" className="card-body">
           <h5 className="card-title">{title}</h5>
           <p className="card-text">{description.substring(0, MAX_LENGTH)} ...</p>
           <div className='row'>
@@ -17,7 +17,7 @@ const Card = (props) => {
             <div className='col-6'><p className='card-price text-end'>$ {price}</p></div>
           </div>        
         </a>
-        <a href="index.html" className="btn btn-primary position-absolute bottom-0 end-0"><i className="bi bi-cart2"></i></a>
+        <a href="#addCart" className="btn btn-primary position-absolute bottom-0 end-0"><i className="bi bi-cart2"></i></a>
       </div>
     </div>
     

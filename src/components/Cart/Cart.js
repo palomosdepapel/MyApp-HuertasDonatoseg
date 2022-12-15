@@ -55,7 +55,7 @@ const Cart = () => {
                                 <b> $ 1076000</b>
                             </div>
                             <div className="col-12 d-flex align-items-center justify-content-center p-4 border-bottom">
-                                <a className="btn btn-primary" href="index.html" id="compra"> Finalizar compra </a>
+                                <a className="btn btn-primary" href="/checkout" id="compra"> Finalizar compra </a>
                             </div>
                         </div>
                     </div>
