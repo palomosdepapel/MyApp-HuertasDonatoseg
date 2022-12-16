@@ -17,7 +17,7 @@ const ItemListContainer = () => {
       img: "/products/relojes/hombres/6R06810172.jpg",
       price: 1076000,
       discount: 1950000,
-      category: "hombre", 
+      category: "hombre",
     },
     {
       id: 2,
@@ -27,7 +27,7 @@ const ItemListContainer = () => {
       img: "/products/relojes/mujeres/2R06000141.jpg",
       price: 4509000,
       discount: 4800000,
-      category: "mujer", 
+      category: "mujer",
     },
     {
       id: 3,
@@ -37,7 +37,7 @@ const ItemListContainer = () => {
       img: "/products/relojes/inteligentes/7606000992.jpg",
       price: 690000,
       discount: 621000,
-      category: "inteligente", 
+      category: "inteligente",
     },
     {
       id: 4,
@@ -47,7 +47,7 @@ const ItemListContainer = () => {
       img: "/products/relojes/deportivos/698615140411.jpg",
       price: 1438000,
       discount: 1438000,
-      category: "deportivos", 
+      category: "deportivos",
     },
     {
       id: 5,
@@ -57,7 +57,7 @@ const ItemListContainer = () => {
       img: "/products/relojes/fashion/7206001111.jpg",
       price: 150000,
       discount: 120000,
-      category: "fashion", 
+      category: "fashion",
     },
     {
       id: 6,
@@ -67,54 +67,54 @@ const ItemListContainer = () => {
       img: "/products/relojes/clasicos/R206000312.jpg",
       price: 753000,
       discount: 454000,
-      category: "clasicos", 
+      category: "clasicos",
     },
   ];
 
-  const {categoria} = useParams()
+  const { categoria } = useParams()
   // console.log (categoria) 
   // const copia = cards
-  const filtrado = categoria ?  cards.filter ((item ) => item.category === categoria) : cards
-  //sconsole.log(resultado,"resultado del filto")
+  const filtrado = categoria ? cards.filter((item) => item.category === categoria) : cards
+  //console.log(resultado,"resultado del filto")
 
   return (
     <main className="App-main mt-5 pt-5">
 
-        <div className="container">
-          <Breadcrumb/>
-        </div>
-        
-        <div className="container d-md-flex align-items-stretch">
+      <div className="container">
+        <Breadcrumb />
+      </div>
 
-          <Sidebar/>
+      <div className="container d-md-flex align-items-stretch">
 
-          <div id="content" className="p-2 p-md-2 pt-5">
-            <section>
-              <div className="container">
-                <div className="row">
-                  
-                    {filtrado.map(({ title, description, img, price, discount }, index) => (
-                      <Card
-                        key={index}
-                        title={title}
-                        description={description}
-                        price={price}
-                        discount={discount}
-                        img={img}
-                      />
-                    ))}
-                  
-                </div>
+        <Sidebar />
+
+        <div id="content" className="p-2 p-md-2 pt-5">
+          <section>
+            <div className="container">
+              <div className="row">
+
+                {filtrado.map(({ title, description, img, price, discount }, index) => (
+                  <Card
+                    key={index}
+                    title={title}
+                    description={description}
+                    price={price}
+                    discount={discount}
+                    img={img}
+                  />
+                ))}
+
               </div>
-              <div className="container pt-5">
-                <div className="row">
-                  <Pagination/>
-                </div>
+            </div>
+            <div className="container pt-5">
+              <div className="row">
+                <Pagination />
               </div>
-            </section>
-          </div>
+            </div>
+          </section>
         </div>
-      </main>
+      </div>
+    </main>
   )
 }
 
