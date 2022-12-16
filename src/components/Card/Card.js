@@ -1,5 +1,6 @@
 import './Card.css';
 import React from "react";
+import ItemCount from '../ItemCount/ItemCount';
 
 const Card = (props) => {
   const {title,description,img,price,discount} = props // es un objeto
@@ -17,7 +18,7 @@ const Card = (props) => {
             <div className='col-6'><p className='card-price text-end'>$ {price}</p></div>
           </div>        
         </a>
-        <a href="#addCart" className="btn btn-primary position-absolute bottom-0 end-0"><i className="bi bi-cart2"></i></a>
+        <ItemCount/>
       </div>
     </div>
     
