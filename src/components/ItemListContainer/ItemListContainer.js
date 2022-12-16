@@ -4,6 +4,7 @@ import Breadcrumb from '../Breadcrumb/Breadcrumb';
 import Pagination from "../Pagination/Pagination";
 import Sidebar from "../Sidebar/Sidebar";
 import Card from "../Card/Card";
+import { useParams } from 'react-router-dom';
 
 const ItemListContainer = () => {
 
@@ -16,7 +17,7 @@ const ItemListContainer = () => {
       img: "/products/relojes/hombres/6R06810172.jpg",
       price: 1076000,
       discount: 1950000,
-      category: "Reloj, hombre", 
+      category: "hombre", 
     },
     {
       id: 2,
@@ -26,7 +27,7 @@ const ItemListContainer = () => {
       img: "/products/relojes/mujeres/2R06000141.jpg",
       price: 4509000,
       discount: 4800000,
-      category: "Reloj, mujer", 
+      category: "mujer", 
     },
     {
       id: 3,
@@ -36,7 +37,7 @@ const ItemListContainer = () => {
       img: "/products/relojes/inteligentes/7606000992.jpg",
       price: 690000,
       discount: 621000,
-      category: "Reloj, inteligente", 
+      category: "inteligente", 
     },
     {
       id: 4,
@@ -46,7 +47,7 @@ const ItemListContainer = () => {
       img: "/products/relojes/deportivos/698615140411.jpg",
       price: 1438000,
       discount: 1438000,
-      category: "Reloj, deportivos", 
+      category: "deportivos", 
     },
     {
       id: 5,
@@ -56,7 +57,7 @@ const ItemListContainer = () => {
       img: "/products/relojes/fashion/7206001111.jpg",
       price: 150000,
       discount: 120000,
-      category: "Reloj, fashion", 
+      category: "fashion", 
     },
     {
       id: 6,
@@ -66,10 +67,15 @@ const ItemListContainer = () => {
       img: "/products/relojes/clasicos/R206000312.jpg",
       price: 753000,
       discount: 454000,
-      category: "Reloj, fashion", 
+      category: "clasicos", 
     },
   ];
 
+  const {categoria} = useParams()
+  // console.log (categoria) 
+  // const copia = cards
+  const filtrado = categoria ?  cards.filter ((item ) => item.category === categoria) : cards
+  //sconsole.log(resultado,"resultado del filto")
 
   return (
     <main className="App-main mt-5 pt-5">
@@ -87,7 +93,7 @@ const ItemListContainer = () => {
               <div className="container">
                 <div className="row">
                   
-                    {cards.map(({ title, description, img, price, discount }, index) => (
+                    {filtrado.map(({ title, description, img, price, discount }, index) => (
                       <Card
                         key={index}
                         title={title}

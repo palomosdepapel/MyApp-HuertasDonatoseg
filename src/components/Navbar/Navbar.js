@@ -109,12 +109,12 @@ const Navbar = () => {
                   Relojes
                 </a>
                 <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="/category/:id">Relojes Hombre</a></li>
-                  <li><a className="dropdown-item" href="/category/:id">Relojes Mujer</a></li>
-                  <li><a className="dropdown-item" href="/category/:id">Relojes Inteligentes</a></li>
-                  <li><a className="dropdown-item" href="/category/:id">Fashion</a></li>
-                  <li><a className="dropdown-item" href="/category/:id">Deportivos</a></li>
-                  <li><a className="dropdown-item" href="/category/:id">Clásicos</a></li>
+                  <li><NavLink className="dropdown-item" to="/category/hombre">Relojes Hombre</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/category/mujer">Relojes Mujer</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/category/inteligente">Relojes Inteligentes</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/category/fashion">Fashion</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/category/deportivos">Deportivos</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/category/clasicos">Clásicos</NavLink></li>
                 </ul>
               </li>
               <li className="nav-item">
