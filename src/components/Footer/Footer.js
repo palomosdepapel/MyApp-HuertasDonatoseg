@@ -1,6 +1,7 @@
 import './Footer.css';
 import logofooter from '../Footer/logofooter.svg'
 import React from 'react'
+//import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -31,9 +32,9 @@ const Footer = () => {
                         <div className="col-sm-3 py-3">
                             <h6 className="py-2">Información</h6>
                             <ul>
-                                <li><a href="index.html">Términos y condiciones</a></li>
-                                <li><a href="index.html">Horario de entregas</a></li>
-                                <li><a href="index.html">Horatio de atención</a></li>
+                                <li><a href="/">Términos y condiciones</a></li>
+                                <li><a href="/">Horario de entregas</a></li>
+                                <li><a href="/">Horatio de atención</a></li>
                             </ul>
                         </div>
                     </div>

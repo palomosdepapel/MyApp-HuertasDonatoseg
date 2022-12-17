@@ -33,9 +33,9 @@ const Navbar = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <a href="#OpenCart" className="btn btn-light btn-lg position-relative" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" title="Cart">
+          <NavLink href="#OpenCart" className="btn btn-light btn-lg position-relative" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" title="Cart">
             <i className="bi bi-cart"></i><Cartwidget />
-          </a>
+          </NavLink>
           <div
             className="collapse navbar-collapse px-2"
             id="navbarSupportedContent"
@@ -50,64 +50,64 @@ const Navbar = () => {
             </form>
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 px-3">
               <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="/category/:id" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <NavLink className="nav-link dropdown-toggle" to="/category/matrimonio" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Matrimonio
-                </a>
+                </NavLink>
                 <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="/category/:id">Compromiso</a></li>
-                  <li><a className="dropdown-item" href="/category/:id">- Anillo Solitario</a></li>
-                  <li><a className="dropdown-item" href="/category/:id">- Anillo con Declaración</a></li>
-                  <li><a className="dropdown-item" href="/category/:id">- Argolla Pisaargolla</a></li>
-                  <li><a className="dropdown-item" href="/category/:id">- Anillos con piedra Certificada</a></li>
+                  <li><NavLink className="dropdown-item" to="/category/anillocompromiso">Compromiso</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/category/anillosolitario">- Anillo Solitario</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/category/anillodeclaracion">- Anillo con Declaración</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/category/anillopisaargolla">- Argolla Pisaargolla</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/category/anillopiedracertificada">- Anillos con piedra Certificada</NavLink></li>
                   <li><hr className="dropdown-divider" /></li>
-                  <li><a className="dropdown-item" href="/category/:id">Argollas</a></li>
+                  <li><NavLink className="dropdown-item" to="/category/argollas">Argollas</NavLink></li>
                 </ul>
               </li>
               <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="/category/:id" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <NavLink className="nav-link dropdown-toggle" to="/category/aretes" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Aretes
-                </a>
+                </NavLink>
                 <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="/category/:id">Topos</a></li>
-                  <li><a className="dropdown-item" href="/category/:id">Candongas</a></li>
-                  <li><a className="dropdown-item" href="/category/:id">Aretes</a></li>
+                  <li><NavLink className="dropdown-item" to="/category/topos">Topos</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/category/candongas">Candongas</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/category/aretes">Aretes</NavLink></li>
                 </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/category/:id">Dijes</a>
+                <NavLink className="nav-link" to="/category/dijes">Dijes</NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/category/:id">Anillos</a>
+                <NavLink className="nav-link" to="/category/anillos">Anillos</NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/category/:id">Cadenas</a>
+                <NavLink className="nav-link" to="/category/cadenas">Cadenas</NavLink>
               </li>
               <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="/category/:id" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <NavLink className="nav-link dropdown-toggle" to="/category/:id" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Pulseras y cadenas
-                </a>
+                </NavLink>
                 <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="/category/:id">Aros</a></li>
-                  <li><a className="dropdown-item" href="/category/:id">Pulseras</a></li>
-                  <li><a className="dropdown-item" href="/category/:id">Esclavas</a></li>
-                  <li><a className="dropdown-item" href="/category/:id">Denarios</a></li>
-                  <li><a className="dropdown-item" href="/category/:id">Tobilleras</a></li>
+                  <li><NavLink className="dropdown-item" to="/category/:id">Aros</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/category/:id">Pulseras</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/category/:id">Esclavas</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/category/:id">Denarios</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/category/:id">Tobilleras</NavLink></li>
                 </ul>
               </li>
               <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="/category/:id" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <NavLink className="nav-link dropdown-toggle" to="/category/collares" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Collares
-                </a>
+                </NavLink>
                 <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="/category/:id">Gargantillas</a></li>
-                  <li><a className="dropdown-item" href="/category/:id">Collares</a></li>
-                  <li><a className="dropdown-item" href="/category/:id">Rosarios</a></li>
+                  <li><NavLink className="dropdown-item" to="/category/gargantillas">Gargantillas</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/category/collares">Collares</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/category/rosarios">Rosarios</NavLink></li>
                 </ul>
               </li>
               <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle active" href="/category/:id" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <NavLink className="nav-link dropdown-toggle active" to="/category/relojes" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Relojes
-                </a>
+                </NavLink>
                 <ul className="dropdown-menu">
                   <li><NavLink className="dropdown-item" to="/category/hombre">Relojes Hombre</NavLink></li>
                   <li><NavLink className="dropdown-item" to="/category/mujer">Relojes Mujer</NavLink></li>
@@ -118,7 +118,7 @@ const Navbar = () => {
                 </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/category/:id">Huevos</a>
+                <NavLink className="nav-link" to="/category/huevos">Huevos</NavLink>
               </li>
             </ul>
             <a href="index.html" className="btn btn-primary d-sm-inline-flex"

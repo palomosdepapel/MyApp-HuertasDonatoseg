@@ -72,10 +72,7 @@ const ItemListContainer = () => {
   ];
 
   const { categoria } = useParams()
-  // console.log (categoria) 
-  // const copia = cards
   const filtrado = categoria ? cards.filter((item) => item.category === categoria) : cards
-  //console.log(resultado,"resultado del filto")
 
   return (
     <main className="App-main mt-5 pt-5">
