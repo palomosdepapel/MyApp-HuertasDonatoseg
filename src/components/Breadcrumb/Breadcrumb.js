@@ -9,6 +9,7 @@ const Breadcrumb = () => {
                 <ol className="breadcrumb">
                     <li className="breadcrumb-item"><NavLink to="/">Inicio</NavLink></li>
                     <li className="breadcrumb-item"><NavLink to="/category/relojes">Relojes</NavLink></li>
+                    {/* <li className="breadcrumb-item"><NavLink to="/category/hombre">Hombres</NavLink></li> */}
                     <li className="breadcrumb-item active" aria-current="page">Hombres</li>
                 </ol>
             </nav>

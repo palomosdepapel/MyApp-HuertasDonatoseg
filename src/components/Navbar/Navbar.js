@@ -8,13 +8,13 @@ import { NavLink } from 'react-router-dom';
 const Navbar = () => {
   return (
     <header>
-      <nav className="navbar navbar-expand-xxl bg-light fixed-top px-2">
+      <nav className="navbar navbar-expand-xl bg-light fixed-top px-2">
         <div className="container-fluid">
 
-          <NavLink className={'navbar-brand d-none d-xxl-block'} to="/"><img src={logo} className="App-logo" alt="Sue Jewellery" title="Sue Jewellery" /></NavLink>
-          <NavLink className={'navbar-brand d-xxl-none d-xxl-block'} to="/"><img src={logo} className="App-logo" alt="Sue Jewellery" title="Sue Jewellery" /></NavLink>
-          
-          <form className="flex-fill d-xxl-none d-xxl-block flexi" role="search">
+          <NavLink className={'navbar-brand d-none d-xl-block'} to="/"><img src={logo} className="App-logo" alt="Sue Jewellery" title="Sue Jewellery" /></NavLink>
+          <NavLink className={'navbar-brand d-xl-none d-xl-block'} to="/"><img src={logo} className="App-logo" alt="Sue Jewellery" title="Sue Jewellery" /></NavLink>
+
+          <form className="flex-fill d-xl-none d-xl-block flexi" role="search">
             <input
               className="form-control"
               type="search"
@@ -33,7 +33,7 @@ const Navbar = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <NavLink href="#OpenCart" className="btn btn-light btn-lg position-relative" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" title="Cart">
+          <NavLink href="#OpenCart" className="btn btn-light btn-lg position-relative mx-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" title="Cart">
             <i className="bi bi-cart"></i><Cartwidget />
           </NavLink>
           <div
@@ -79,19 +79,17 @@ const Navbar = () => {
               <li className="nav-item">
                 <NavLink className="nav-link" to="/category/anillos">Anillos</NavLink>
               </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/category/cadenas">Cadenas</NavLink>
-              </li>
               <li className="nav-item dropdown">
                 <NavLink className="nav-link dropdown-toggle" to="/category/:id" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Pulseras y cadenas
                 </NavLink>
                 <ul className="dropdown-menu">
-                  <li><NavLink className="dropdown-item" to="/category/:id">Aros</NavLink></li>
-                  <li><NavLink className="dropdown-item" to="/category/:id">Pulseras</NavLink></li>
-                  <li><NavLink className="dropdown-item" to="/category/:id">Esclavas</NavLink></li>
-                  <li><NavLink className="dropdown-item" to="/category/:id">Denarios</NavLink></li>
-                  <li><NavLink className="dropdown-item" to="/category/:id">Tobilleras</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/category/cadenas">Cadenas</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/category/aros">Aros</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/category/pulseras">Pulseras</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/category/esclavas">Esclavas</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/category/denarios">Denarios</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/category/tobilleras">Tobilleras</NavLink></li>
                 </ul>
               </li>
               <li className="nav-item dropdown">
@@ -116,9 +114,6 @@ const Navbar = () => {
                   <li><NavLink className="dropdown-item" to="/category/deportivos">Deportivos</NavLink></li>
                   <li><NavLink className="dropdown-item" to="/category/clasicos">Clásicos</NavLink></li>
                 </ul>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/category/huevos">Huevos</NavLink>
               </li>
             </ul>
             <a href="index.html" className="btn btn-primary d-sm-inline-flex"

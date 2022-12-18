@@ -72,8 +72,11 @@ const ItemListContainer = () => {
   ];
 
   const { categoria } = useParams()
+  
+  
   const filtrado = categoria ? cards.filter((item) => item.category === categoria) : cards
-
+  console.log(filtrado,"resultado del filto")
+  //console.log (categoria)
   return (
     <main className="App-main mt-5 pt-5">
 
@@ -90,9 +93,10 @@ const ItemListContainer = () => {
             <div className="container">
               <div className="row">
 
-                {filtrado.map(({ title, description, img, price, discount }, index) => (
+                {filtrado.map(({id, title, description, img, price, discount }) => (
                   <Card
-                    key={index}
+                    key={id}
+                    id={id}
                     title={title}
                     description={description}
                     price={price}
