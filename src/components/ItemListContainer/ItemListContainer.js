@@ -75,7 +75,7 @@ const ItemListContainer = () => {
   
   
   const filtrado = categoria ? cards.filter((item) => item.category === categoria) : cards
-  console.log(filtrado,"resultado del filto")
+  //console.log(filtrado,"resultado del filtro")
   //console.log (categoria)
   return (
     <main className="App-main mt-5 pt-5">
