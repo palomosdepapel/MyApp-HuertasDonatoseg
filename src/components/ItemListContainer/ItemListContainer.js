@@ -18,6 +18,7 @@ const ItemListContainer = () => {
       price: 1076000,
       discount: 1950000,
       category: "hombre",
+      stock: 5,
     },
     {
       id: 2,
@@ -28,6 +29,7 @@ const ItemListContainer = () => {
       price: 4509000,
       discount: 4800000,
       category: "mujer",
+      stock: 5,
     },
     {
       id: 3,
@@ -38,6 +40,7 @@ const ItemListContainer = () => {
       price: 690000,
       discount: 621000,
       category: "inteligente",
+      stock: 5,
     },
     {
       id: 4,
@@ -48,6 +51,7 @@ const ItemListContainer = () => {
       price: 1438000,
       discount: 1438000,
       category: "deportivos",
+      stock: 5,
     },
     {
       id: 5,
@@ -58,6 +62,7 @@ const ItemListContainer = () => {
       price: 150000,
       discount: 120000,
       category: "fashion",
+      stock: 5,
     },
     {
       id: 6,
@@ -68,6 +73,7 @@ const ItemListContainer = () => {
       price: 753000,
       discount: 454000,
       category: "clasicos",
+      stock: 5,
     },
   ];
 
@@ -93,7 +99,7 @@ const ItemListContainer = () => {
             <div className="container">
               <div className="row">
 
-                {filtrado.map(({id, title, description, img, price, discount }) => (
+                {filtrado.map(({id, title, description, img, price, discount, stock }) => (
                   <Card
                     key={id}
                     id={id}
@@ -102,6 +108,7 @@ const ItemListContainer = () => {
                     price={price}
                     discount={discount}
                     img={img}
+                    stock={stock}
                   />
                 ))}
 
