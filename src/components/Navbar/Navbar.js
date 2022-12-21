@@ -70,7 +70,7 @@ const Navbar = () => {
                 <ul className="dropdown-menu">
                   <li><NavLink className="dropdown-item" to="/category/topos">Topos</NavLink></li>
                   <li><NavLink className="dropdown-item" to="/category/candongas">Candongas</NavLink></li>
-                  <li><NavLink className="dropdown-item" to="/category/aretes">Aretes</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/category/aretes_">Aretes</NavLink></li>
                 </ul>
               </li>
               <li className="nav-item">
@@ -98,7 +98,7 @@ const Navbar = () => {
                 </NavLink>
                 <ul className="dropdown-menu">
                   <li><NavLink className="dropdown-item" to="/category/gargantillas">Gargantillas</NavLink></li>
-                  <li><NavLink className="dropdown-item" to="/category/collares">Collares</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/category/collares_">Collares</NavLink></li>
                   <li><NavLink className="dropdown-item" to="/category/rosarios">Rosarios</NavLink></li>
                 </ul>
               </li>
