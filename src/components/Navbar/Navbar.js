@@ -5,7 +5,9 @@ import Cartwidget from './CartWidget/Cartwidget'
 import './CartWidget/Cartwidget.css';
 import { NavLink } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = (props) => {
+  const {productsCart} = props;
+  //console.log(productsCart);
   return (
     <header>
       <nav className="navbar navbar-expand-xl bg-light fixed-top px-2">
@@ -34,7 +36,13 @@ const Navbar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <NavLink href="#OpenCart" className="btn btn-light btn-lg position-relative mx-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" title="Cart">
-            <i className="bi bi-cart"></i><Cartwidget />
+            {productsCart.length > 0 ? (
+              // Si el carrito tiene uno o más productos, el ícono aparece lleno, caso contrario aprecerá vacío
+              <><i className="bi bi-cart-fill"></i> <Cartwidget /></>
+              ):(
+              <i className="bi bi-cart"></i>
+            )}
+            
           </NavLink>
           <div
             className="collapse navbar-collapse px-2"

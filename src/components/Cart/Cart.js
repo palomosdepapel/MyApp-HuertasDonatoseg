@@ -13,19 +13,17 @@ const Cart = () => {
                 <h5 className="offcanvas-title" id="offcanvasWithBothOptionsLabel">
                     Carrito de compras
                 </h5>
-                <button
-                    type="button"
-                    className="btn-close"
-                    data-bs-dismiss="offcanvas"
-                    aria-label="Close"
-                ></button>
+                <button type="button" className="btn btn-light">
+                    <i class="bi bi-trash"></i></button>
+                <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
             </div>
             <div className="offcanvas-body">
                 <div>
                     <div>
                         <div className="row">
                             <div className="col-3 d-flex align-items-center p-2 border-bottom">
-                                <img src="https://kevins.com.co/img/productos/6R06810172.jpg" alt="Product"/>
+                                <img src="https://kevins.com.co/img/productos/6R06810172.jpg" alt="Product" />
                             </div>
 
                             <div className="col-3 d-flex align-items-center p-2 border-bottom">

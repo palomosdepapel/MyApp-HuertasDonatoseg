@@ -11,7 +11,7 @@ const ItemListContainer = () => {
   const cards = [
     {
       id: 1,
-      title: "Reloj Guess Análogo",
+      title: "xReloj Guess Análogo",
       description:
         "Reloj guess análogo, para hombre, tablero redondo colores azul y rosa, estilo index + arabigo, pulso silicona color azul, calendario , Diámetro: 44.00mm , Resistencia al agua: 10 bares",
       img: "/products/relojes/hombres/6R06810172.jpg",
