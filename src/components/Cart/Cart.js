@@ -14,7 +14,7 @@ const Cart = () => {
                     Carrito de compras
                 </h5>
                 <button type="button" className="btn btn-light">
-                    <i class="bi bi-trash"></i></button>
+                    <i className="bi bi-trash"></i></button>
                 <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 
             </div>
